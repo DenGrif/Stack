@@ -12,4 +12,15 @@ class Stack:
         return self.items.pop()
 
     def peek(self):
-        return self.items[len(self.items) - 1]
+        return self.items[-1]
+
+stack = Stack()
+
+print(stack.is_empty())
+
+stack.push(1)
+stack.push(2)
+stack.push(3)
+
+print(stack.is_empty())
+print(stack.peek())
